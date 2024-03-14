@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "dataG2F"
+  site-url: "https://DanielKick-USDA.github.io/dataG2F"
+  description: "Repackage Genomes to Fields competition data for easy use."
+  repo-branch: main
+  repo-url: "https://github.com/DanielKick-USDA/dataG2F"
