@@ -1,0 +1,15 @@
+website:
+  sidebar:
+    contents:
+      - index.ipynb
+      - 00_core.ipynb
+      - 01_qol.ipynb
+      - 02_core_dna.ipynb
+      - 03_g2fc_aggregation.ipynb
+      - 04_imputation.ipynb
+      - 05_prep_matrices.ipynb
+      - 06_grid_nasa_power.ipynb
+      - 07_filter_genotypes.ipynb
+      - 08_cluster_genotypes.ipynb
+      - 09_explore_train_validate.ipynb
+      - 10_collect_historical.ipynb
