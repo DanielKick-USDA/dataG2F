@@ -3,7 +3,7 @@
 # %% auto 0
 __all__ = ['get_data']
 
-# %% ../nbs/00_core.ipynb 8
+# %% ../nbs/00_core.ipynb 16
 import pkgutil
 from io import BytesIO
 # supported formats
@@ -12,7 +12,7 @@ import pandas as pd
 import pickle as pkl
 
 
-# %% ../nbs/00_core.ipynb 9
+# %% ../nbs/00_core.ipynb 17
 def get_data(name = '', # `name` of the data to be retrieved. If no recognized name (or '') is passed, a list of available datasets will be printed.
              **kwargs # `filename` can be used in lieu of a name
              ):
@@ -26,8 +26,8 @@ def get_data(name = '', # `name` of the data to be retrieved. If no recognized n
             ## Genomic Data
             'ACGT':         'ACGT.npy',
             'ACGT_hilb':    'ACGT_hilb.npy',            
-            'KEGG_entries': 'filtered_kegg_gene_entries.json',
-            'KEGG_slices':  'ACGT_gene_slice_list.json',
+            'KEGG_entries': 'filtered_kegg_gene_entries.pkl',
+            'KEGG_slices':  'ACGT_gene_slice_list.pkl',
 
             ## Soil and Management 
             'mgmtMatNames': 'mgmtMatNames.npy',
@@ -47,6 +47,17 @@ def get_data(name = '', # `name` of the data to be retrieved. If no recognized n
             'obs_geno_lookup': 'obs_geno_lookup.npy', # Phno_Idx  Geno_Idx  Is_Phno_Idx
             'obs_env_lookup':  'obs_env_lookup.npy',  # Phno_Idx  Env_Idx   Is_Phno_Idx
             # 'YMat':            'YMat.npy'
+
+            # Historical Weather (NASA Power)
+            'power_data':'power_data.npy',
+            'power_date':'power_date.npy',
+            'power_lats':'power_lats.npy',
+            'power_keys':'power_keys.npy',
+            'power_lons':'power_lons.npy',
+            
+            # Historical Yield and Metadata
+            'nass_data':'nass_historical.csv',
+            'nass_latlon':'latlon_to_county.csv',
         }
         filename = ''
         if name in defaults_dict.keys():
