@@ -28,6 +28,7 @@ def get_data(name = '', # `name` of the data to be retrieved. If no recognized n
             'ACGT_hilb':    'ACGT_hilb.npy',            
             'KEGG_entries': 'filtered_kegg_gene_entries.pkl',
             'KEGG_slices':  'ACGT_gene_slice_list.pkl',
+            'KEGG_slices_names': 'ACGT_gene_site_name_list.pkl',
 
             ## Soil and Management 
             'mgmtMatNames': 'mgmtMatNames.npy',
